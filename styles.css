@@ -1,0 +1,189 @@
+/* GLOBAL */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: #33B8FF;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 
+Primary Color: #00FF9C (Bright Green)
+Secondary Color: #00D2FF (Sky Blue)
+Accent Color: #5EFF33 (Lime Green)
+Complementary Color: #33B8FF (Electric Blue)
+*/
+/* GLOBAL */
+/* NAVBAR */
+header {
+    background-color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    border-bottom: 2px solid #00D2FF;
+}
+
+.nav-link {
+  
+  transition: 1.3s;
+  position: relative;
+}
+
+a {
+  color: #00D2FF;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 2px solid black; 
+  z-index: 2;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00D2FF;  
+  transition: 1.3s;
+  transform: rotateX(90deg);
+  z-index: -1;
+}
+
+a:hover:before {
+  transform: rotateX(0deg);
+}
+
+a:hover {
+  color: white;
+  border: 2px solid #00D2FF; 
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #00D2FF;
+}
+
+/* NAVBAR */
+/* HERO*/
+.container {
+  margin: 100px auto;
+  width: 90%;
+}
+
+.flex {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  /* width: 300px;
+  height: 340px; */
+  width: 100%;
+  height: 100%;
+  transition: 1.3s;
+}
+
+.border-green {
+  border: solid 4px black;
+ }
+
+
+.col {
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.col-a {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+/*  ABOUT*/
+/*  ABOUT*/
+/*  SKILLS*/
+/*  SKILLS*/
+/*  EXPERIENCE*/
+/*  EXPERIENCE*/
+/*  PORTFOLIO*/
+/*  PORTFOLIO*/
+/*  CONTACT*/
+/*  CONTACT*/
+/*  FOOTER*/
+/*  FOOTER*/
+
+/* Media */
+@media(max-width:880px) {
+  .hamburguer {
+    display: block;
+    background-color: black;
+  }
+
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -120%;
+    top: 55px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+   
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+
+/* Media */
