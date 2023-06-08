@@ -96,6 +96,7 @@ a:hover {
 .container {
   margin: 100px auto;
   width: 90%;
+  text-align: center;
 }
 
 .flex {
@@ -106,16 +107,24 @@ a:hover {
 }
 
 .hero-img {
-  /* width: 300px;
-  height: 340px; */
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   transition: 1.3s;
+  box-shadow:
+   blue 0px 0px 0px 2px inset,
+   rgb(0, 0, 0) 10px -10px 0px -3px,
+   #00D2FF 10px -10px,
+   rgb(0, 0, 0) 20px -20px 0px -3px,
+   rgb(255, 217, 19) 20px -20px,
+   rgb(0, 0, 0) 30px -30px 0px -3px,
+   #00FF9C 30px -30px;
+   transition: 1.2s;
 }
 
-.border-green {
-  border: solid 4px black;
- }
+.hero-img:hover,
+.about-img:hover {
+  transform: scale(0.9);
+} 
 
 
 .col {
@@ -123,8 +132,21 @@ a:hover {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 46px;
 }
+
+h2 {
+  font-size: 36px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 
 .col-a {
   padding: 15px 30px;
@@ -132,8 +154,41 @@ h1 {
   font-weight: 700;
 }
 /*  ABOUT*/
+.about {
+  background-color: rgb(21, 21, 21);
+  padding: 2px 0px;
+  color: white;
+}
+
+.about-img {
+  width: 60%;
+  height: 60%;
+  transition: 1.2s;
+  box-shadow:
+   rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px,
+     rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.1) -20px 20px,
+       rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
 /*  ABOUT*/
 /*  SKILLS*/
+#skills {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.card {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border-radius: 25px;
+  width: 80%;
+  margin: 10px;
+  height: 380px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 /*  SKILLS*/
 /*  EXPERIENCE*/
 /*  EXPERIENCE*/
