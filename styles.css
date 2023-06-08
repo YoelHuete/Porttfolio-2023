@@ -189,6 +189,18 @@ h3 {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+i {
+  font-size: 35px;
+  color: #00D2FF;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: 1.4s;
+}
+
+i:hover {
+ transform: rotate(360deg);
+}
 /*  SKILLS*/
 /*  EXPERIENCE*/
 /*  EXPERIENCE*/
