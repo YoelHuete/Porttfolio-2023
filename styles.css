@@ -3,7 +3,7 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    color: #33B8FF;
+    color: white;
     box-sizing: border-box;
     font-family: Poppins,'Roboto Mono', monospace;
 }
@@ -296,6 +296,33 @@ i:hover {
 /*  CONTACT*/
 /*  CONTACT*/
 /*  FOOTER*/
+
+.footer-top {
+  margin: 50px;
+}
+
+.footer-link a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin: 5px;
+}
+
+footer p {
+  text-align: left;
+}
+
+.footer-link a:hover{
+  color: #00D2FF;
+}
+
+
+.footer-p {
+  text-align: center;
+}
+
 /*  FOOTER*/
 
 /* Media */
