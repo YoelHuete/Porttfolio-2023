@@ -417,6 +417,19 @@ footer p {
     margin-top: 10px;
   }
 
+
+  .hero-img {
+    margin-top: 80px;
+    width: 50%;
+    height: 50%;
+  }
+
+  
+.card-portfolio {
+  padding: 5px 3px;
+  margin: 10px;
+}
+
 }
 
 
